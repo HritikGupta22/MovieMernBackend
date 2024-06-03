@@ -9,7 +9,7 @@ dotenv.config();
 connectdb();
 const app = express();
 const corsOptions = {
-    origin: 'https://joyful-smakager-ab74fa.netlify.app', // replace with your frontend URL
+    origin: process.env.Frontend_Url, // replace with your frontend URL
     optionsSuccessStatus: 200,
   };
   
